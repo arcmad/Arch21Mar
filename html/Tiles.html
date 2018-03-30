@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Tiles</title>
+    </head>
+    <style>
+       
+        .global
+        {
+            border:black solid;
+            height: auto;
+            width:90%;
+            margin:auto;
+        }
+        #headerText{
+            margin-top:30px;
+            text-align: center;
+           font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 3em;
+           font-weight: 28500;
+           font-style: normal;
+            
+
+        }
+        #firstTile{
+            background: url("../images/bg.jpg");
+            background-size: cover;
+            height:380px;
+            width:800px;
+            margin: 30px auto;
+        }
+
+  .secondTileGroup{
+          display:inline-block;
+          margin-left:200px;
+          margin-top:-20px;
+          width:800px;
+        }
+        
+        #secondTile{
+            
+            background-color:greenyellow;            
+            float:left;
+            clear:right;
+            height: 115px;
+            width:33%;
+            color:white;
+            text-decoration-style: solid;
+            font-size: 30px;
+
+
+            
+           
+        }
+        #thirdTile{
+            background-color:orange;   
+            float:left;
+            clear:right;
+            height: 115px;
+            width:32%;
+            color:white;
+            text-decoration-style: solid;
+            font-size: 30px;
+            margin-left:10px;
+          
+        }
+        #fourthTile{
+            background-color:palevioletred; 
+            float:left;
+            clear:right;
+            height: 115px;
+            width:32%;
+            color:white;
+            text-decoration-style: solid;
+            font-size: 30px;
+            margin-left:10px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .clearFix{
+            clear: both;
+        }
+   
+#firstContent {
+    float:left !important;
+    width:360px;
+    background: linear-gradient(black,gray);
+    opacity:0.8;
+    color:white;
+    margin:10px;
+    padding-left:10px;
+    line-height: 2.1em;
+    text-align: left;
+    box-sizing: border-box;
+
+}
+
+#btnRead{
+    display:block;
+    background-color: olivedrab;
+    color:white;
+    height: 30px;
+    width:100px;
+    outline-width: 0ch;
+    background-origin: border-box;
+    box-shadow: 0px,0px,2px,1px,olivedrab;
+
+}
+
+#btnRead:hover{
+    background-color:orange;
+}
+       
+    </style>
+    <body>
+        <div class="global"> 
+            <h2 id="headerText"> mondrian </h2>
+
+            <div id="firstTile"> 
+                <span id="firstContent"> 
+                        <h3 style="text-align: center;font-size:20px;">Lorem Ipsum Dolor</h3>
+                        Praesent blandit tristique augue nec fermentum. Aenean volutpat aliquam viverra. 
+                        Nunc purus dui, volutpat ac viverra fusce. Vivamus libero ante, 
+                        lacinia in cursus vitae, egestas a neque
+                        <input id="btnRead" type="button" value="Read more >>">                        
+                </span></div>
+
+            <div  class="secondTileGroup">
+                <div id="secondTile"><p>About</p></div>
+                <div id="thirdTile">Latest News</div>
+                <div id="fourthTile">Features</div>
+            </div>
+          
+          
+        </div>
+    </body>
+</html>

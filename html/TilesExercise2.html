@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Modrian Site
+        </title>
+        <!--CSS Begins-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+        <style>
+
+            @font-face {
+                font-family: "SourceSansPro-Regular";
+                src: url(fonts/SourceSansPro-Regular.otf);
+            }
+
+            .top{
+                width:100%;
+                height:100%
+            }
+            h1{
+                margin:auto;
+                text-align: center;
+                margin-top:30px;
+                font-size:70px;
+            }
+
+/*First Row styling*/
+            #firstRow{
+                margin:30px auto;
+                background-image: url("../images/exercise2/gallery.jpg");
+                height:400px;
+                width:55%;
+                background-size: cover;
+            }
+
+            #transText{
+                background:linear-gradient(black, black, black);
+                opacity:0.8;
+                color:white;
+                float:left;
+                width:50%;
+                margin:10px;
+                padding:10px;
+                box-sizing: border-box;
+                line-height:4ch;
+        
+            }
+            #btnRead{
+                clear:both;
+                background-color:#7ec429 !important;                           
+                color:#fff !important;;
+                background-origin: border-box;
+                font-size:11px;
+                display:block;
+                margin-top:10px;      
+                font-weight:300 bold;
+                height:30px ;
+                letter-spacing: 0.1em;
+                text-decoration: none;
+                background-blend-mode:normal !important;        
+               font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+ 
+            }
+            #btnRead:hover{
+                background-color:orange !important;
+            }
+
+
+/*Second Row styling (3 tiles)*/
+#secondRow{
+    margin:-20px auto; 
+    width:55%;
+    height:120px;
+}
+
+
+.secondRowDiv1{
+    float: left;
+    width:32%;
+    height:120px;
+    margin-right:11px;
+    border:#7ec429 solid 1px;
+    background-image:url("../images/exercise2/gallery.jpg");
+    background-position:center;
+    position:relative;
+} 
+
+.layer1{
+    background-color: #7ec429 !important;
+    opacity: 0.9;
+    float: left;
+    width:100%;
+    height:120px;
+    margin-right:11px;
+    border:#7ec429 solid 1px;
+    position:relative;
+}
+
+.layer1:hover
+{
+opacity:0;    
+}
+
+.secondRowDiv2{
+    float: left;
+    width:32%;
+    height:120px;
+    margin-right:11px;
+    border:#f78121 solid 1px;
+    background-image:url("../images/exercise2/news.jpg");
+    background-position: 20%,10%;
+    position:relative;
+}  
+
+.layer2{
+    background-color: #f78121 !important;
+    opacity: 0.8;
+    float: left;
+    width:100%;
+    height:120px;
+    margin-right:11px;
+    border:#f78121 solid 1px;
+    position:relative; 
+}
+
+.layer2:hover{
+opacity:0;    }
+
+
+.secondRowDiv3{
+    float: left;
+    width:32%;
+    height:120px;
+    border:#eb61bd solid 1px;
+    background-color:rgba(0, 0, 0, 0.918);
+    background-position: 20%,10%;
+    position:relative;
+}  
+
+.layer3{
+    background-color: #eb61bd !important;
+    opacity: 0.8;
+    float: left;
+    width:100%;
+    height:120px;
+    margin-right:11px;
+    border:#eb61bd solid 1px;
+    position:relative;
+}
+
+.layer3:hover{
+opacity:0;    }
+
+#secondRowSpan{
+    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:white;
+    font-size:25px;
+    position: absolute;
+    top:80px;
+    left:10px;
+}
+
+#secondRowSpanForBackground{
+    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:white;
+    font-size:25px;
+    position: absolute;
+    top:55px;
+    left:11px;
+}
+
+#open{
+    position: absolute;
+    top:100px;
+    left:210px;    
+}
+
+/*Third Row styling (3 tiles)*/
+#thirdRow{
+    margin:35px auto; 
+    width:55%;
+    height:230px;
+    
+}
+
+.thirdRowDiv1{
+    float: left;
+    width:32%;
+    height:230px;
+    margin-right:11px;
+    border:#7ec429 solid 1px;
+    background-image:url("../images/exercise2/project1.jpg");
+    position: relative;
+       
+} 
+
+.thirdRowDiv2{
+    float: left;
+    width:32%;
+    height:230px;
+    margin-right:11px;
+    border:#7ec429 solid 1px;
+    background-image:url("../images/exercise2/project2.jpg");
+    position: relative;
+} 
+
+.thirdRowDiv3{
+    float: left;
+    width:32%;
+    height:230px;
+    border:#7ec429 solid 1px;
+    background-image:url("../images/exercise2/project3.jpg");
+    position: relative;
+} 
+
+#thirdRow div:hover{
+    opacity:0.6;
+}
+
+#thirdRowSpan{
+    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:white;
+    font-size:25px;
+    position: absolute;
+    top:180px;
+    left:10px;
+    background:linear-gradient(rgb(3, 1, 1), gray);
+  
+}
+
+/*Fourth Row styling (2 tiles)*/
+#fourthRow{
+    margin:-20px auto; 
+    width:55%;
+    height:230px;
+    
+}
+
+.fourthRowDiv1{
+    float: left;
+    width:32%;
+    height:230px;
+    margin-right:11px;
+    border:#7ec429 solid 1px;
+    background-color:#7ec429; 
+    position: relative;
+} 
+
+.fourthRowDiv2{
+    float: left;
+    width:66%;
+    height:230px;    
+    background-color:whitesmoke;
+    position: relative;
+    } 
+
+    .fourthRowDiv1 p{
+color:white;
+line-height: 23px;
+padding:2px;
+    }
+
+    .fourthRowDiv2 p{
+        color:black;
+line-height: 23px;
+padding:2px; 
+    }
+
+#fourthRowSpan{
+    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:white;
+    font-size:25px;
+    position: absolute;
+    top:190px;
+    left:10px;
+   
+  
+}
+
+#left{
+    position: absolute;
+    top:190px;
+    left:420px; 
+    font-size:30px;   
+}
+#right{
+    position: absolute;
+    top:190px;
+    left:440px; 
+    font-size:30px;   
+}
+
+/*Fifth Row styling (2 tiles)*/
+#fifthRow{
+    margin:30px auto; 
+    width:55%;
+    height:230px;
+   
+    
+    
+}
+.fifthRowDiv1{
+    float: left;
+    width:66%;
+    height:230px;   
+    margin-right:11px; 
+    background-color:whitesmoke;
+    
+    background-image:url("../images/exercise2/map.png");
+    background-size: cover;
+   
+    } 
+
+    .fifthRowDiv2{
+    float: left;
+    width:32%;
+    height:230px;
+    position: relative;
+    
+    border:#f78121 solid 1px;
+    background-color:#f78121; 
+} 
+
+    .fifthRowDiv2 p{
+        color:white;
+    line-height: 4px;
+    padding:2px;
+    }
+
+    #fifthRowSpan{
+        
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color:white;
+        font-size:25px;   
+        position: absolute;
+        top:190px;
+        left:10px; 
+    }
+
+
+/*Sixth Row styling (3 tiles)*/
+#sixthRow{
+    margin:-20px auto; 
+    width:55%;
+    height:230px;
+   
+    
+    
+}
+.sixthRowDiv1{
+    float: left;
+    width:32%;
+    height:230px;   
+    margin-right:11px; 
+    border:white solid 1px;
+    position: relative;
+        } 
+
+.sixthRowDiv2{
+    float: left;
+    width:32%;
+    height:230px; 
+    margin-right:11px; 
+    border:  white  1px;
+    background-image:url("../images/exercise2/client2.png");
+    position: relative;
+}
+
+#leftSixth{
+    position: absolute;
+    top:200px;
+    left:190px; 
+    font-size:20px;   
+}
+#rightSixth{
+    position: absolute;
+    top:200px;
+    left:210px; 
+    font-size:20px;   
+}
+.sixthRowDiv3{
+    float: left;
+    width:32%;
+    height:230px; 
+    border:#7ec429 solid 1px;
+    background-color:#7ec429;
+    position: relative;
+}
+
+.sixthRowDiv3 p{
+    color:white;
+    line-height: 22px;
+    padding:2px;
+}
+
+.sixthRowDiv1 div{
+    display:inline-block; 
+    margin-left:3px;
+    margin-top:2px;
+
+}
+.sixthRowDiv1 div img{
+    vertical-align:center;
+    border:-2px;
+    margin:-2px;
+    padding:-2px;    
+}
+
+.sixthRowDiv1 div img:hover{
+    opacity:0.8;
+}
+
+#sixthRowSpan{
+    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:white;
+    font-size:25px;
+    position: absolute;
+    top:190px;
+    left:10px;
+    z-index: 999;
+}
+
+
+
+/*Seventh Row styling (2 tiles)*/
+#seventhRow{
+    margin:30px auto; 
+    width:55%;
+    height:120px;
+   
+    
+    
+}
+.seventhRowDiv1{
+    float: left;
+    width:32%;
+    height:120px;   
+    margin-right:11px; 
+    border:#f78121 solid 1px;    
+    background-color:#f78121; 
+    position: relative; 
+    } 
+
+.seventhRowDiv2{
+    float: left;
+    width:66%;
+    height:120px;        
+    background-color:#eb61bd;
+    position: relative; 
+} 
+.seventhRowDiv2 p{
+    color:white;
+    line-height: 22px;
+    padding:2px;
+}
+
+#seventhRowSpan{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:white;
+    font-size:25px;
+    position: absolute;
+    top:90px;
+    left:10px;
+}
+
+.clearFix{
+    content:"";
+    clear: both;
+    display: table;
+}
+
+</style>
+<!--CSS ends-->
+    </head>
+    <body>
+        <div class="top">
+
+            <h1>mondrian</h1>
+
+            <!--First Tile-->
+            <div id="firstRow">
+                <span id="transText">
+                        <h2>Lorem Ipsum Dolor</h2>
+
+                         Praesent blandit tristique 
+                         augue nec fermentum. Aenean volutpat
+                         aliquam viverra. Nunc purus dui, 
+                         volutpat ac viverra fusce. 
+                         Vivamus libero ante, 
+                         lacinia in cursus vitae, 
+                         egestas a neque.
+                         <input id="btnRead" type="button" name="Read" value="Read more >>">                       
+                </span> 
+                               
+            </div>
+
+            <!--Second Tile-->
+            <div id="secondRow">
+                <div class="secondRowDiv1">
+                      
+                    <div class="layer1">  
+                            <span id="secondRowSpan">Home</span>                         
+                    </div> 
+                    <p id="secondRowSpanForBackground">Home</p>   
+                    <i id="open" class="fas fa-arrow-alt-circle-right"></i>               
+                </div>
+                <div class="secondRowDiv2">
+                    <div class="layer2"> <span id="secondRowSpan">Latest News</span></div>
+                    <p id="secondRowSpanForBackground">Latest News</p>  
+                    <i id="open" class="fas fa-arrow-alt-circle-right"></i>
+                </div>
+                <div class="secondRowDiv3">
+                    <div class="layer3"><span id="secondRowSpan">Features</span></div>
+                    <p id="secondRowSpanForBackground">Features</p>  
+                    <i id="open" class="fas fa-arrow-alt-circle-right"></i>
+                </div>
+            </div>
+
+            <!--Third Tile-->
+            <div id="thirdRow">
+               
+                <div class="thirdRowDiv1"> <span id="thirdRowSpan">Project Title</span></div>
+                <div class="thirdRowDiv2"> <span id="thirdRowSpan">Project Title</span></div>
+                <div class="thirdRowDiv3"> <span id="thirdRowSpan">Project Title</span></div>
+            </div> 
+
+            <!--Fourth Tile-->
+            <div id="fourthRow">
+                        
+                    <div class="fourthRowDiv1"><p>Lorem ipsum dolor sit amet, 
+                        <span style="color: black">consectetur adipiscing </span> elit. 
+                        Praesent blandit tristique augue nec fermentum. 
+                        Aenean volutpat aliquam viverra. Nunc purus dui, volutpat ac viverra fusce.</p> 
+                        <span id="fourthRowSpan">Awards</span></div>
+                    <div class="fourthRowDiv2"><p>
+                            Aliquam posuere pretium lacus sed egestas. 
+                            Morbi eu augue in nisi feugiat lobortis vitae sed nibh. 
+                            Sed auctor suscipit ante ac commodo. Duis id tortor velit, in facilisis urna. 
+                            Aenean volutpat metus et lacus consequat in condimentum turpis varius. 
+                            Integer rutrum sem eget ligula congue sit amet malesuada lorem imperdiet. <br>
+                            - Client                                 
+                    </p> <span id="fourthRowSpan" style="color:black">Testimonials</span>
+                    <i id="left" class="fas fa-angle-left"></i>
+                    <i  id="right" class="fas fa-angle-right"></i>
+                </div>
+            </div>
+
+
+            <!--Fifth Tile-->
+            <div id="fifthRow">           
+                   
+                    <div class="fifthRowDiv1"></div>
+                    <div class="fifthRowDiv2">
+                        <p><i style="font-size:12px;vertical-align:bottom;" class="fas fa-map-marker"></i>  456 Main street</p>
+                        <p style="padding-left:13px;">City, State</p>
+                        <p style="padding-left:13px;">12345</p>
+                        <p style="padding-left:13px;">Country</p>
+                        <p style="line-height:2px"> <i style="font-size:15px;" class="fas fa-phone-square"></i> 141-411-2401</p>
+                        <p style="line-height:2px"><i style="font-size:15px;" class="fas fa-envelope-square"></i> email@domain.com</p>
+                        <span id="fifthRowSpan">Contact</span>
+                    </div>
+            </div>
+
+            <!--sixth Tile-->
+            <div id="sixthRow">           
+        
+                    <div class="sixthRowDiv1">
+                        <div id="1"><img src="../images/exercise2/grid/1.jpg" alt="1.jpg"></div>
+                        <div id="1"><img src="../images/exercise2/grid/2.jpg" alt="2.jpg"></div>
+                        <div id="1"><img src="../images/exercise2/grid/3.jpg" alt="3.jpg"></div>
+                        <div id="1"><img src="../images/exercise2/grid/4.jpg" alt="4.jpg"></div>
+                        <div id="1"><img src="../images/exercise2/grid/5.jpg" alt="5.jpg"></div>
+                        <div id="1"><img src="../images/exercise2/grid/6.jpg" alt="6.jpg"></div>
+                        <div id="1"><img src="../images/exercise2/grid/7.jpg" alt="7.jpg"></div>
+                        <div id="1"><img src="../images/exercise2/grid/8.jpg" alt="8.jpg"></div>
+                        <div id="1"><img src="../images/exercise2/grid/9.jpg" alt="9.jpg"></div>
+                        <span id="sixthRowSpan">Flickr</span>
+                    </div>
+                    <div class="sixthRowDiv2">
+                        <span style="color:black;" id="sixthRowSpan">Clients</span>
+                        <i id="leftSixth" class="fas fa-angle-left"></i>
+                        <i  id="rightSixth" class="fas fa-angle-right"></i>
+                    </div>
+                    <div class="sixthRowDiv3">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Praesent blandit tristique augue nec fermentum. 
+                            Aenean volutpat aliquam viverra. Nunc purus dui, volutpat ac viverra fusce. 
+                            <span  id="sixthRowSpan">Promotion</span></p>
+                    </div>
+            </div>
+
+             <!--seventh Tile-->
+             <div id="seventhRow"> 
+                <div class="seventhRowDiv1">
+                         <i style="margin-left:20px;margin-top:25px;opacity:0.7" class="fab fa-twitter"></i> 
+                          <i style="margin-left:10px;margin-top:25px;opacity:0.7" class="fab fa-google-plus-g"></i> 
+                          <i style="margin-left:10px;margin-top:25px;opacity:0.7" class="fab fa-linkedin-in"></i>
+                          <i style="margin-left:10px;margin-top:25px;opacity:0.7" class="fab fa-youtube-square"></i>
+                        <i style="margin-left:10px;margin-top:25px;opacity:0.7" class="fab fa-flickr"></i>
+                        <i style="margin-left: 10px;margin-top:25px;opacity:0.7" class="fab fa-dribbble"></i>
+                        <i style="margin-left:10px;margin-top:25px;opacity:0.7" class="fab fa-tumblr"></i>
+                        <span  id="seventhRowSpan">Social Media</span>
+                </div>
+                <div class="seventhRowDiv2">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Praesent blandit tristique augue nec fermentum. 
+                        <span  id="seventhRowSpan">Thank You</span></p>
+                </div>
+
+               
+        </div>
+        <div style="margin-left:300px; font-size:9px;"> © Mondrian by Glorm. Availalbe at Themeforest</div> 
+
+        </div>
+    </body>
+</html>

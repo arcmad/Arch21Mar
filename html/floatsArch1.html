@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>floats again</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        img{
+            height:200px;
+            width:300px;
+        }
+        #imgDiv{
+            float:left;
+            width:33%;
+            padding-left:5px;
+        }
+        .clearFix{
+            content:"";
+            clear: both;
+            display: table;
+        }
+    </style>
+</head>
+<body>
+    <div class="clearFix">
+    <div id="imgDiv"><img src="../images/exercise2/img1.jpg"></div>
+    <div id="imgDiv"><img src="../images/exercise2/img2.jpg"></div>
+    <div id="imgDiv"><img src="../images/exercise2/img3.jpg"></div>
+</div>
+</body>
+</html>
