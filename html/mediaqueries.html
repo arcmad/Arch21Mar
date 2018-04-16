@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>      
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Media queries</title>   
+        <style type="text/css">
+        *{
+            box-sizing: border-box;
+        }
+        #header{
+            background-color: blueviolet;
+            color:white;
+        }
+
+        #footer p{
+            background-color: blueviolet;
+            color:white;
+        }
+        #menu ul {
+        list-style-type:none;
+        left:0;
+        top:0;
+        }
+
+
+
+        #menu ul li{
+            background-color:lightblue;
+            color:white;            
+            border-bottom: 2px white solid;
+        }
+
+       .row::after {
+            content: "";
+            clear: both;
+            display: block;
+}
+
+        [class*="col"]{
+            float:left;
+            padding:15px;
+        }
+
+        .aside {
+    background-color: #33b5e5;
+    padding: 15px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+       
+
+        /*Desktop applications only*/
+        .col1{width:8.33%;}
+        .col2{width:16.66%}
+        .col3{width:25%;}
+        .col4{width:33.33%}
+        .col5{width:41.66%}
+        .col6{width:50%}
+        .col7{width:58.33%}
+        .col8{width:66.66%}
+        .col9{width:75%;}
+        .col10{width:83.33%}
+        .col11{width:91.66%}
+        .col12{width:100%}
+
+        @media screen and (max-width:768px){
+            [class*="col"]{
+                width:100%;
+            }
+        }
+
+        </style>    
+    </head>
+    <body>
+        <div id="header"><h1>Archana</h1></div>
+
+        <div class="row">
+
+            <div id="menu" class="col3"><ul>
+                <li>About</li>
+                <li>Story</li>
+                <li>Competencies</li>
+                <li>Thank you note</li>
+            </ul>
+            </div>
+
+
+            <div id="main" class="col6">
+                <h3>Details</h3>
+                <p>Chania is the capital of the Chania region on the island of Crete. 
+                    The city can be divided in two parts, the old town and the modern city.</p>
+            </div>
+
+
+            <div class="col3">        
+                <div class="aside">
+                    <h2>What?</h2>
+                    <p>Chania is a city on the island of Crete.</p>
+                    <h2>Where?</h2>
+                    <p>Crete is a Greek island in the Mediterranean Sea.</p>
+                    <h2>How?</h2>
+                    <p>You can reach Chania airport from all over Europe.</p>                
+                </div>
+             </div>
+
+            </div>
+        
+        
+        <div id="footer"><p>This is the footer of the page. will be visible in any dimension of the page.</p></div>
+    </body>
+</html>

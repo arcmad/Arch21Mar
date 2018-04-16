@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, intial-scale=1">
+        <meta charset="utf-8">
+        <title>Media Query</title>
+        <style type="text/css">
+        /* max-width -> Desktop to Mobile*/
+        /*min-width -> Mobile to Desktop */
+        #parent{
+            margin:100px auto;
+            width:74.96339677891654%;
+        }
+        #desk{
+            background-color:yellow;
+        }
+      #tab {
+          display:none;
+      }
+      #mob {
+          display:none;
+      }
+    @media screen and (max-width: 1024px)
+    {
+        #desk{
+            display:none;
+            }
+        #tab{
+            display:block;
+            background-color:lightpink;
+
+        }
+        #mob{
+            display:none;
+        }
+    }
+    @media screen and (max-width: 768px){
+        #desk{
+            display:none;
+        }
+        #tab{
+            display:none;
+        }
+        #mob{
+            display:block;
+            background-color: lightgreen;
+        }
+    }
+        </style>
+    </head>
+    <body>
+        <div id="parent">
+            <div id="desk">Desktop</div>
+            <div id="tab">Tab</div>
+            <div id="mob">Mobile</div>
+        </div>
+    </body>
+</html>

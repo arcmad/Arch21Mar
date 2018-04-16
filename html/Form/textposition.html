@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>position</title>
+    </head>
+    <style type="text/css">
+    #container{
+        width:600px;
+        height:600px;
+        background-color:blueviolet;
+        position:relative;
+        box-shadow: 10px 10px red, 20px 20px yellow, 30px 30px green;
+        transition: 2s;
+    }
+
+    #container:hover{
+        box-shadow: 10px 10px green, 20px 20px yellow ,30px 30px red;
+    }
+
+    #lt{
+        position: absolute;
+        left:10px;
+        top:20px;
+    }
+
+    #rt{
+        position: absolute;
+        right:10px;
+        top:20px;
+    }
+
+    #lb{
+        position: absolute;
+        left:10px;
+        bottom:20px;
+    }
+    #rb{
+        position: absolute;
+        right:10px;
+        bottom:20px;
+    }
+
+    #center{
+        position: absolute;
+        left:50%;
+        top:50%;
+        transform:translate(-50%,-50%);
+        box-shadow: 1px 2px 4px rgba(184, 17, 17, 0.5);
+        font-size:20px;
+    }
+
+</style>
+    <body>
+        <div id="container">
+           <div id="lt">left-top</div> 
+           <div id="rt">right-top</div>
+           <div id="lb">left-bottom</div>
+           <div id="rb">right-bottom</div>
+           <div id="center">center-data</div>
+          
+        </div>
+    </body>
+</html>
