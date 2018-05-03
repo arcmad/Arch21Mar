@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta char-set="utf-8">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <title>portfolio</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+        <style type="text/css">
+        *{
+            box-sizing: border-box;
+        }
+        #mainPage{
+            height:650px;
+            width:100%;        
+            background: url("images/bgmain.jpg");
+            background-size: cover;
+            position: relative;
+            padding:10px;
+        }
+
+        #left{
+            float:left;
+            color:white;  
+            padding:10px;        
+            width:30%;
+            font-size: 30px;
+           
+
+        }
+        #right{
+            float:left;
+            color:white;
+            padding:10px;
+            width:70%;
+            
+        }
+
+      
+        #right ul li{            
+            color:white;
+            display:inline;
+           padding:20px;          
+            font-size: 20px;  
+                               
+        }
+
+            a,
+            a:link,
+            a:visited {
+            position: relative;
+            color: #0FF;
+            font-variant: small-caps;
+            text-decoration: none;
+            }
+
+            a:hover,
+            a:active {
+            color: PINK;           
+            text-shadow: -.25px -.25px 0 #0FF, -.25px .25px 0 #0FF, .25px -.25px 0 #0FF, .25px .25px 0 #0FF;
+            }
+
+            a::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #0FF; 
+            transform: scaleX(0);
+            transition: all .5s;
+            }
+
+            a:hover::before,
+            a:active::before {            
+            transform: scaleX(1);
+            }
+
+        #welcome{
+            color:white;
+            width:100%;
+            height:40%;
+            top:30%;
+            left:0;
+            right:0;
+            background-color:rgba(175, 98, 10, 0.308);           
+            position: absolute;
+        }
+
+        #welcome h1{
+            color:white !important;
+            transform:translate(30%,-10%);
+            letter-spacing:3px;
+            font-size: 120px; 
+        }
+        .clearfix{
+            clear: both;
+            content:none;
+        }
+        /*****************************************************************************************************************/
+
+        .parttwo{
+            position: absolute;                      
+            top:600px;         
+            width: 100%;
+            left:120px;
+        }
+       
+
+        #boxfloat{
+            float:left;
+            height:200px;
+            width:20%;            
+            background-color:orangered;
+            border:1px solid gray;
+            position: relative;        
+        }
+
+     
+#boxfloat #header{
+    font-size:30px;
+    color:white;
+    position: absolute;
+    top:50px;
+    left:30px;
+}
+
+#boxfloat #ptext{
+    font-size:15px;
+    color:white;
+    position: absolute;
+    top:140px;
+    left:30px;
+}
+
+#boxfloat:hover{
+    background-color:black;
+}
+
+#fontawe{
+    position: absolute;
+    top:20px;
+    left:30px;  
+}
+
+#fontawe i{
+    color:white;
+    font-size: 30px;
+    
+}
+
+#parent{
+    display:inline-block;
+}
+
+#underline{
+    position: absolute;
+    top:130px;
+    left:30px;
+    height:3px;
+    width:80%;
+    background-color:white;
+    }
+
+#parent i{    
+    position: absolute;
+    top:120px;
+    left:30px;
+    font-size: 10px;
+    height:30px;
+    width:1px;
+    color:turquoise;
+    transform: skewX(-30deg);
+    transition: 2s;
+}
+
+#parent i:hover{
+    transform:skew(0deg);
+    transition:2s;
+}
+
+#knowmeimage img{
+    height:30%;
+    width:40%;
+    float:left;
+    
+    margin-top:20px;
+    
+}
+
+#knowmetext{
+    width:40%;
+    float:left;
+    padding:10px;
+}
+
+#knowmetext h2{
+    letter-spacing: 3px;
+   
+}
+
+#knowmetext p{
+    margin-top:40px;
+    letter-spacing:3px;
+}
+       
+#parentknow{
+    display:inline-block;
+}
+
+#underlineknow{
+   position: absolute;
+    left:42%;
+    
+    top:49%;
+    height:3px;
+    width:20%;
+    background-color:black;
+    padding:1px;
+    margin-left:8px;
+    }
+
+#parentknow i{    
+    position: absolute;  
+    font-size: 25px;
+    height:30px;
+    width:1px;    
+    color:turquoise;
+    transform: skewX(-30deg);
+    transition: 2s;
+}
+
+#learnbutton{
+    background-color:orangered;
+    color:white;
+    border:none;
+    height:40px;
+    width:120px;
+    letter-spacing: 2px;
+    transition:2s;
+
+}
+
+#learnbutton:hover{
+background-color:black;
+
+transition:2s;
+}
+
+        
+        </style>
+    </head>
+    <body>
+            
+        
+    <div id="mainPage" class="clearfix">
+
+        <!--********************************************HOME***********************************************************-->
+    
+            <div class="partone" id="#home">
+            <div id="left"><em>Archana Madhusudan</em> </div>
+            <div id="right">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#home"> About me</a></li>
+                    <li><a href="#home">Technical Skills</a></li>
+                    <li><a href="#home">Work Experience</a></li>                   
+                    <li><a href="#home">Contact me</a></li>                    
+                </ul> 
+            </div>
+         <!--*************************WELCOME************************************-->
+             <div id="welcome"><h1>Welcome</h1></div>
+            </div>
+        <!--*****************  *******WELCOME************************************-->
+            </div>
+        <!--************************************************HOME*******************************************************-->
+
+       
+        
+        
+        <!--************************************************ABOUT ME*******************************************************-->
+        
+        <div class="parttwo" id="#home">
+            <div id="boxfloat"> 
+                <p id="fontawe"><i class="far fa-edit"></i></p>
+                <p id="header" > Working Hard</p>
+                 <div id="parent"><i class="fas fa-square"></i><div id="underline"></div></div>
+                <p id="ptext">Lorem Ipsum is simply dummy text of the printing.</p>
+             </div>
+            <div id="boxfloat">
+                    <p id="fontawe"><i class="fas fa-cogs"></i></p>
+                    <p id="header"> Web design</p>
+                    <div id="parent"><i class="fas fa-square"></i><div id="underline"></div></div>
+                    <p id="ptext">Lorem Ipsum is simply dummy text of the printing.</p>
+                 </div>
+            <div id="boxfloat">
+                    <p id="fontawe"><i class="fas fa-cogs"></i></p>
+                    <p id="header"> Graphics design</p>
+                    <div id="parent"><i class="fas fa-square"></i><div id="underline"></div></div>
+                    <p id="ptext">Lorem Ipsum is simply dummy text of the printing.</p>
+                 </div>
+            <div id="boxfloat">                    
+                    <p id="fontawe"><i class="far fa-heart"></i></p>
+                    <p id="header"> Photography</p>
+                    <div id="parent"><i class="fas fa-square"></i><div id="underline"></div></div>
+                    <p id="ptext">Lorem Ipsum is simply dummy text of the printing.</p>
+                 </div>
+            <div id="knowmeimage"><img src="images/about-image.jpg"></div>
+            <div id="knowmetext">
+                <h2>Know About me</h2>
+                <div id="parentknow"><i class="fas fa-square"></i><div id="underlineknow"></div></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, 
+                consectetur adipisicing elit,Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et 
+                dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <input id="learnbutton" type="button" value="Learn more">
+            </div>
+    </div>
+    </body>
+</html>

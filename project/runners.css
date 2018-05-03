@@ -1,0 +1,143 @@
+*{
+	margin:0px;
+	padding:0px;
+	font-family: 'Raleway', sans-serif;
+}
+
+#main
+{
+	height:100vh;
+	background: url("images/runners.jpg") no-repeat;
+	background-size:cover;
+	opacity: 0.5;
+}
+
+#menu{
+	width:15%;
+	background:lightcoral;
+	height:100vh;
+	opacity:0.8;
+	float:left;
+}
+
+#logo h2{
+	padding-top:10px;
+	padding-left:40px;
+}
+
+#logo img{
+	height:100px;
+	width:100px;
+	align-content: center;
+}
+
+.submenu{
+	padding-top:100px;
+	line-height: 50px;
+	font-weight: bolder;
+}
+
+.submenu li{
+	text-align: center;
+}
+
+.submenu li a {
+	text-align: center;
+	color:#fff;
+	text-decoration: none;
+}
+
+#work{
+width:85%;
+float:left;
+}
+
+.details{
+	width:80%;
+	margin-top:20px;
+	margin:auto;	
+	box-sizing:border-box;
+	min-height: 500px;
+	background: rgba(0,0,0,.9);
+	padding: 35px 15px 15px 15px;
+}
+
+
+
+.inputWrap{
+	padding-bottom: 10px;
+	width:80%;
+	margin-left:40px;
+	padding-top:10px;
+	
+}
+.inputWrap label{
+	display:block;
+	width:20%;
+	padding-bottom:6px;
+	color:rgb(218, 150, 150);
+	border:1px solid #fff;
+	box-sizing: border-box;
+	font-size: 18px;
+	font-weight: bolder;
+}
+
+.inputWrap input, select{
+	min-width: 100%;
+	min-height:30px;
+	
+}
+
+.gender{
+	margin-left:20px;
+	padding-top:20px;
+	color:rgb(214, 153, 153);
+}
+
+#btnWrap button{
+	height:40px;
+	width:100px;
+	color:#000;
+	background:lightcoral;
+	font-weight: bolder;
+}
+
+
+
+#Dashboard{	
+display:none;
+
+}
+
+#Dashboard ul li{
+	display:inline;
+	color:#fff;
+	border: 1px solid #fff;
+	font-size:18px;
+	font-weight:bolder;
+	padding-left:30px;
+	}
+
+	#countWrap{
+		margin-top:200px;
+	}
+
+.details table{
+	width:100%;
+	color:#fff;
+}
+
+.details table,th{
+	border-bottom: 1px solid #fff;
+	border-collapse: collapse;
+	text-align: center;
+}
+.details table, td,th{
+	padding: 10px;
+}
+
+.clear{
+	clear: both;
+	display:table;
+	content: none;
+}

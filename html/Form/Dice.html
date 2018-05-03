@@ -17,17 +17,15 @@
             <div id="one">
 
                 </div>
-                
+
             <script type="text/javascript">        
                 var dice1=prompt("Enter a number less than or equal to 6:");
                 var dice2=prompt("Enter a number less than or equal to 6:");
                 var totalCount=parseInt(dice1) + parseInt(dice2);       
-                alert(totalCount.toString());         
-                var highRan=Math.ceil(Math.random()) * 12;
-                var lowRan=Math.ceil(Math.random()); 
-                alert(highRan.toString() );
-                alert( lowRan.toString());               
-                if(totalCount > lowRan && totalCount <= highRan)
+                alert(totalCount.toString());
+                var highRan=Math.ceil(Math.random() * 12);
+                alert(highRan.toString());
+                if(totalCount <= highRan)
                     alert("true");
                 else
                     alert('false');
